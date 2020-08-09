@@ -27,7 +27,7 @@ const App = () => {
         <p className="score">Score:</p>
         <p>Loading Questions...</p> {/** Add a Spinner */}
       </div>
-      <QuestionCard/>
+      <QuestionCard />
       <div>
         <button 
           className="next"
