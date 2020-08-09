@@ -1,9 +1,13 @@
-const React = require('react');
+import QuestionCard from './components/QuestionCard'
+const React = require('react')
 
-function App() {
+const App = () => {
   return (
-    <div className="App">Premier League Quiz</div>
-  );
+    <div>
+      <div className="App">Sports Quiz</div>
+      <QuestionCard/>
+    </div>
+  )
 }
 
-export default App;
+export default App
