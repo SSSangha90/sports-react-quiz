@@ -25,10 +25,10 @@ export const Wrapper = styled.div`
   flex-direction: column;
   align-items: center;
   > p {
-    color: #fff;
+    color: #000066;
   }
   .score {
-    color: #fff;
+    color: #000066;
     font-size: 2rem;
     margin: 0;
   }
