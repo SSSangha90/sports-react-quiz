@@ -1,6 +1,8 @@
 import QuestionCard from './components/QuestionCard'
 import React, {useState} from 'react'
 import { fetchQuizQuestions, Difficulty, QuestionState } from './API'
+import { GlobalStyle, Wrapper } from './App.styles';
+
 
 export type AnswerObject = {
   question: string,
@@ -75,7 +77,9 @@ const App = () => {
   }
 
   return (
-    <div>
+    <>
+    <GlobalStyle />
+      <Wrapper>
       <div className="App">
         <h1>Sports Quiz</h1>
 
@@ -114,7 +118,8 @@ const App = () => {
       ): null}
 
       </div> 
-    </div>
+    </Wrapper>
+    </>
   )
 }
 
