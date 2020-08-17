@@ -1,18 +1,22 @@
 import styled, { createGlobalStyle } from 'styled-components';
 
-import BGImage from './images/sports-image.jpg';
+import BGImage from './images/Return_of_Sports.jpg';
 
 export const GlobalStyle = createGlobalStyle`
   html {
     height: 100%;
   }
   body {
-    background-image: url(${BGImage});
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.7)), to(rgba(0, 0, 0, 0.7))), url(${BGImage});
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(${BGImage});
     background-size: cover;
     margin: 0;
     padding: 0 20px;
     display: flex;
     justify-content: center;
+    background-position: center;
+    height: 100vh;
+    background-attachment: fixed;
   }
   * {
     font-family: 'Catamaran', sans-serif;
@@ -24,11 +28,11 @@ export const Wrapper = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  > p {
-    color: #000066;
+  p {
+    color: #000;
   }
   .score {
-    color: #000066;
+    color: #87f1ff;
     font-size: 2rem;
     margin: 0;
   }
@@ -61,3 +65,4 @@ export const Wrapper = styled.div`
     max-width: 200px;
   }
 `;
+

@@ -1,7 +1,8 @@
 import QuestionCard from './components/QuestionCard'
 import React, {useState} from 'react'
 import { fetchQuizQuestions, Difficulty, QuestionState } from './API'
-import { GlobalStyle, Wrapper } from './App.styles';
+import { GlobalStyle, Wrapper } from './App.styles'
+import './index.css'
 
 
 export type AnswerObject = {
@@ -22,8 +23,6 @@ const App = () => {
   const [score, setScore] = useState(0)
   const [gameOver, setGameOver] = useState(true)
 
-  console.log(questions)
-
   const startQuiz = async () => {
     setLoading(true)
     setGameOver(false)
@@ -38,7 +37,6 @@ const App = () => {
     setUserAnswers([])
     setNumber(0)
     setLoading(false)
-
   }
 
   const checkAnswer = (e: React.MouseEvent<HTMLButtonElement>) => {
@@ -93,7 +91,7 @@ const App = () => {
 
         {!gameOver ? (<p className="score">Score:{score}</p>): null}
 
-        { loading ? (<p>Loading Questions...</p>): null} {/** Add a spinner */}
+        { loading ? (<div className="loader"></div>): null} {/** Add a spinner */}
 
       </div>
       <div>
