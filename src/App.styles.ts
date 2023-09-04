@@ -1,6 +1,6 @@
-import styled, { createGlobalStyle } from 'styled-components';
+import styled, { createGlobalStyle } from "styled-components";
 
-import BGImage from './images/Return_of_Sports.jpg';
+import BGImage from "./images/Return_of_Sports.jpg";
 
 export const GlobalStyle = createGlobalStyle`
   html {
@@ -28,6 +28,13 @@ export const Wrapper = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
+
+  > div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
   p {
     color: #000;
   }
@@ -51,7 +58,8 @@ export const Wrapper = styled.div`
     text-align: center;
     margin: 20px;
   }
-  .start, .next {
+  .start,
+  .next {
     cursor: pointer;
     background: linear-gradient(180deg, #ffffff, #ffcc91);
     border: 2px solid #d38558;
@@ -65,4 +73,3 @@ export const Wrapper = styled.div`
     max-width: 200px;
   }
 `;
-
